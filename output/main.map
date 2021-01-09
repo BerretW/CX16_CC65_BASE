@@ -1,0 +1,53 @@
+Modules list:
+-------------
+C:\cc65\lib/cx16.lib(exehdr.o):
+    EXEHDR            Offs=000000  Size=00000C  Align=00001  Fill=0000
+C:\cc65\lib/cx16.lib(loadaddr.o):
+    LOADADDR          Offs=000000  Size=000002  Align=00001  Fill=0000
+main.o:
+    CODE              Offs=000000  Size=000029  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+LOADADDR              0007FF  000800  000002  00001
+EXEHDR                000801  00080C  00000C  00001
+CODE                  00080D  000835  000029  00001
+
+
+Exports list by name:
+---------------------
+__EXEHDR__                000001 REA    __HEADER_LAST__           00080D RLA    
+__HIMEM__                 009F00 REA    __LOADADDR__              000001 REA    
+__ONCE_RUN__              000836 RLA    __STACKSIZE__             000800 REA    
+
+
+
+Exports list by value:
+----------------------
+__EXEHDR__                000001 REA    __LOADADDR__              000001 REA    
+__STACKSIZE__             000800 REA    __HEADER_LAST__           00080D RLA    
+__ONCE_RUN__              000836 RLA    __HIMEM__                 009F00 REA    
+
+
+
+Imports list:
+-------------
+__EXEHDR__ (exehdr.o):
+    [linker generated]        C:\cc65\cfg/cx16.cfg(6)
+__HEADER_LAST__ ([linker generated]):
+    [linker generated]        C:\cc65\cfg/cx16.cfg(14)
+    [linker generated]        C:\cc65\cfg/cx16.cfg(14)
+__HIMEM__ ([linker generated]):
+    [linker generated]        C:\cc65\cfg/cx16.cfg(15)
+    [linker generated]        C:\cc65\cfg/cx16.cfg(14)
+__LOADADDR__ (loadaddr.o):
+    [linker generated]        C:\cc65\cfg/cx16.cfg(5)
+__ONCE_RUN__ ([linker generated]):
+    [linker generated]        C:\cc65\cfg/cx16.cfg(15)
+    [linker generated]        C:\cc65\cfg/cx16.cfg(15)
+__STACKSIZE__ ([linker generated]):
+    [linker generated]        C:\cc65\cfg/cx16.cfg(15)
+
